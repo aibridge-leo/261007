@@ -1,0 +1,86 @@
+ABC라이프케어 랜딩 페이지 이미지 생성 프롬프트
+==================================================
+
+[사용 방법]
+1. 아래 각 프롬프트의 "PROMPT" 부분을 그대로 복사해 이미지 생성 AI(Midjourney, DALL·E, Imagen, Firefly 등)에 붙여넣으세요.
+2. 생성된 이미지를 index.html과 같은 위치의 images 폴더에 [저장 파일명]으로 저장하면 페이지에 자동으로 표시됩니다.
+   (이미지가 없을 때는 파스텔 그라데이션 배경이 대신 표시됩니다.)
+3. Midjourney를 사용할 경우 각 프롬프트 끝의 --ar 비율 옵션을 그대로 사용하세요. 다른 도구는 해당 옵션을 지우고 비율만 설정하면 됩니다.
+
+[공통 스타일 - 모든 이미지에 동일하게 적용됨]
+soft pastel color palette (powder blue, mint, butter yellow, blush pink, lavender), minimal and clean composition, warm natural light, calm and trustworthy mood, plenty of negative space, no text, no logos, no watermark
+
+
+--------------------------------------------------
+01. 메인 히어로 이미지
+저장 파일명: images/hero.jpg
+권장 비율: 4:4.2 (세로형 정사각, 약 1000x1050px)
+--------------------------------------------------
+PROMPT:
+A warm, candid photo of a Korean middle-aged couple in their 50s sitting comfortably on a light beige sofa in a bright, minimalist living room, smiling while talking with a friendly female consultant holding a tablet, soft morning sunlight through sheer curtains, a small green plant on a wooden side table, soft pastel color palette (powder blue, mint, butter yellow, blush pink, lavender), minimal and clean composition, warm natural light, calm and trustworthy mood, plenty of negative space in the lower left corner, shallow depth of field, editorial lifestyle photography, no text, no logos, no watermark --ar 20:21
+
+
+--------------------------------------------------
+02. 서비스 - 건강
+저장 파일명: images/service-health.jpg
+권장 비율: 4:3 (약 800x600px)
+--------------------------------------------------
+PROMPT:
+Minimal 3D illustration of health and wellness: a soft rounded heart with a gentle pulse line, a small stethoscope, a glass of water and a green leaf, arranged neatly on a pastel mint background, clay-like matte texture, soft shadows, soft pastel color palette with mint green as the main color, minimal and clean composition, calm and trustworthy mood, plenty of negative space, centered composition, no text, no logos, no watermark --ar 4:3
+
+
+--------------------------------------------------
+03. 서비스 - 재무
+저장 파일명: images/service-finance.jpg
+권장 비율: 4:3 (약 800x600px)
+--------------------------------------------------
+PROMPT:
+Minimal 3D illustration of personal finance planning: a small stack of rounded coins, a simple piggy bank, a calculator and an upward-trending soft bar chart, arranged neatly on a pastel butter yellow background, clay-like matte texture, soft shadows, soft pastel color palette with butter yellow as the main color, minimal and clean composition, calm and trustworthy mood, plenty of negative space, centered composition, no text, no numbers, no logos, no watermark --ar 4:3
+
+
+--------------------------------------------------
+04. 서비스 - 가족
+저장 파일명: images/service-family.jpg
+권장 비율: 4:3 (약 800x600px)
+--------------------------------------------------
+PROMPT:
+Minimal 3D illustration of family care: a small cozy house with a warm window light, three rounded abstract figures of different sizes (grandparent, parent, child) standing close together, a soft heart floating above, arranged on a pastel blush pink background, clay-like matte texture, soft shadows, soft pastel color palette with blush pink as the main color, minimal and clean composition, warm and caring mood, plenty of negative space, centered composition, no faces, no text, no logos, no watermark --ar 4:3
+
+
+--------------------------------------------------
+05. 서비스 - 은퇴
+저장 파일명: images/service-retirement.jpg
+권장 비율: 4:3 (약 800x600px)
+--------------------------------------------------
+PROMPT:
+Minimal 3D illustration of a peaceful retirement: a comfortable armchair beside a small potted plant, a teacup, an open book and a calendar, with a gentle sunset sun in the background, arranged on a pastel lavender background, clay-like matte texture, soft shadows, soft pastel color palette with lavender as the main color, minimal and clean composition, relaxed and hopeful mood, plenty of negative space, centered composition, no text, no logos, no watermark --ar 4:3
+
+
+--------------------------------------------------
+06. 상담 신청 섹션 이미지
+저장 파일명: images/consult.jpg
+권장 비율: 4:3 (약 900x675px)
+--------------------------------------------------
+PROMPT:
+A calm, candid photo of a Korean woman in her 40s having a one-on-one consultation with a friendly professional advisor at a round white table in a bright, minimalist consulting room, both smiling gently, a notebook and two cups of tea on the table, soft daylight from a large window, light wood and white interior, soft pastel color palette (powder blue, mint, blush pink, lavender), minimal and clean composition, warm natural light, calm and trustworthy mood, plenty of negative space, shallow depth of field, editorial lifestyle photography, no text, no logos, no watermark --ar 4:3
+
+
+--------------------------------------------------
+07. (선택) SNS 공유용 대표 이미지 (Open Graph)
+저장 파일명: images/banner.jpg
+권장 비율: 1.91:1 (1200x630px)
+--------------------------------------------------
+PROMPT:
+Minimal flat illustration banner for a life-care consulting service: four soft rounded icons in a horizontal row representing health (leaf and heart), finance (coin), family (house), and retirement (armchair), each placed on its own pastel circle (mint, butter yellow, blush pink, lavender), on a clean off-white background with subtle soft gradient, generous empty space on the left side for a title, soft pastel color palette, minimal and clean composition, calm and trustworthy mood, no text, no logos, no watermark --ar 40:21
+
+※ index.html에 이미 아래 코드로 등록되어 있으며, 하단 상담 신청 배너 배경으로도 사용됩니다.
+<meta property="og:image" content="images/banner.jpg" />
+
+
+--------------------------------------------------
+[스타일 변경 팁]
+--------------------------------------------------
+- 사진 대신 일러스트로 통일하고 싶다면 01, 06 프롬프트의 "editorial lifestyle photography"를
+  "soft minimal 3D illustration, clay-like matte texture"로 바꾸세요.
+- 브랜드 색상을 바꾼 경우, 각 프롬프트의 색상 이름(mint, butter yellow, blush pink, lavender, powder blue)을
+  index.html 상단 :root의 색상에 맞게 함께 수정하세요.
